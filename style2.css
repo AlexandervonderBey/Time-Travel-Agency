@@ -183,6 +183,7 @@ main{
         margin-bottom: 10rem;
         border-radius: 10px;
         background-color: #25252a;
+        object-fit: cover;
         width: 86%;
         height: auto;
         padding: 1rem;
@@ -200,7 +201,7 @@ main{
         border-radius: 5px;
         object-fit: cover;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
