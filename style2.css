@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0.75rem;
-    height: 6vh;
+    height: 5vh;
 
     p {
         grid-column: 1;
@@ -95,9 +95,11 @@ header{
 }
 
 main{
+    padding-bottom: 7.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(250, 250, 250);
 
     .section-header {
         width: 90%;
@@ -123,7 +125,7 @@ main{
             color: #2e2e2e;
         }
     }
-
+    
     .service-container{
         width: 90%;
         height: 60vh;
@@ -180,7 +182,7 @@ main{
 
     .image-gallery{
         margin-top: 2rem;
-        margin-bottom: 10rem;
+        margin-bottom:2.5rem;
         border-radius: 10px;
         background-color: #25252a;
         object-fit: cover;
@@ -203,35 +205,72 @@ main{
         width: 100%;
         height: 100%;
     }
+
+    button{
+        color: #2e2e2e;
+        border:1px solid #b9b9c7;
+        border-radius: 10px;
+        border-color: #b9b9c7;
+        background-color: #ffffff;
+        padding: 0.5rem;
+        width: 15rem;
+        height: 2.5rem;
+    }
+    button:hover{
+        color: #ffffff;
+        border: 1px solid white;
+        font-size: medium;
+        font-weight: 800;
+        background-color: #3BBA9C;
+    }
 }
 
 
 footer {
-    width:100%;
-    height: 120px;
-    background-color: #25252a;
-    p{
-        margin-top: 1.5rem;
-        padding-left: 4rem;
-        /* justify-content: center;
-        text-align: center; */
-        color: #ffffff;
-    }
-    .socials-container {
-        width: 100%;
+    .footer-content {
+        color: white;
+        background-color: #040404;
+        width: 100;
+        height: 15vh;
         display: flex;
-        /* justify-content:center;
-        flex-direction: row; */
-        gap: 2rem;
-        margin: 1rem 5rem;
+        gap: 20%;
+        align-items: center;
+        justify-content: center;
     }
-    .icon-container img{
-        /* border: 2px solid #000000; */
-        background-color: #ffffff;
-        border-radius: 50%;
-        border-color: rgb(22, 190, 134);
-        padding: 3px;     
-        max-height: 30px;
-        max-width: auto;
+
+    .footer-text-container {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+
+        h3{
+            font-weight: 400;
+            color: #3BBA9C;
+        }
+
+        ul {
+            list-style: none;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+
+            li{
+                padding-top: 5px;
+                font-size: smaller;
+            }
+        }
+    }
+
+    .copyright {
+        height: 5vh;
+        width: 100%;
+        border-top: 1px solid white;
+        background-color: #25252a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            color: #ffffff;
+            font-weight: 200;
+        }
     }
 }
